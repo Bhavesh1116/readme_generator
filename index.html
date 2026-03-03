@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub README Generator - Create Stunning Profile READMEs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🚀 GitHub README Generator</h1>
+            <p>Create stunning GitHub profile READMEs in minutes!</p>
+        </header>
+
+        <!-- Stage Selection -->
+        <div class="stage-selector">
+            <h2>Choose Your Style</h2>
+            <div class="stages">
+                <button class="stage-btn active" data-stage="1">
+                    <span class="stage-number">1</span>
+                    <span class="stage-name">Basic</span>
+                </button>
+                <button class="stage-btn" data-stage="2">
+                    <span class="stage-number">2</span>
+                    <span class="stage-name">Simple</span>
+                </button>
+                <button class="stage-btn" data-stage="3">
+                    <span class="stage-number">3</span>
+                    <span class="stage-name">Standard</span>
+                </button>
+                <button class="stage-btn" data-stage="4">
+                    <span class="stage-number">4</span>
+                    <span class="stage-name">Advanced</span>
+                </button>
+                <button class="stage-btn" data-stage="5">
+                    <span class="stage-number">5</span>
+                    <span class="stage-name">Enhanced</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>📝 Enter Your Details</h2>
+            <form id="readmeForm">
+                <!-- Basic Info -->
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="e.g., Bhavesh Mali" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">GitHub Username *</label>
+                    <input type="text" id="username" placeholder="e.g., Bhavesh1116" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tagline">Tagline *</label>
+                    <input type="text" id="tagline" placeholder="e.g., Problem Solver | Team Leader" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Bio *</label>
+                    <textarea id="bio" rows="3" placeholder="Tell us about yourself..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Current Role</label>
+                    <input type="text" id="role" placeholder="e.g., BSc Computer Science Student">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="e.g., India 🇮🇳">
+                </div>
+
+                <!-- Skills -->
+                <div class="form-group">
+                    <label for="skills">Skills (comma separated)</label>
+                    <input type="text" id="skills" placeholder="e.g., Python, JavaScript, React, Node.js">
+                </div>
+
+                <!-- Projects -->
+                <div class="form-group">
+                    <label for="projects">Projects (one per line)</label>
+                    <textarea id="projects" rows="4" placeholder="Project Name | Description | Tech Stack"></textarea>
+                </div>
+
+                <!-- Social Links -->
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn URL</label>
+                    <input type="url" id="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="instagram">Instagram Username</label>
+                    <input type="text" id="instagram" placeholder="your_instagram">
+                </div>
+
+                <div class="form-group">
+                    <label for="twitter">Twitter Username</label>
+                    <input type="text" id="twitter" placeholder="your_twitter">
+                </div>
+
+                <div class="form-group">
+                    <label for="spotify">Spotify User ID (optional)</label>
+                    <input type="text" id="spotify" placeholder="Your Spotify User ID">
+                </div>
+
+                <!-- Generate Button -->
+                <button type="submit" class="generate-btn">🎨 Generate README</button>
+            </form>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="preview-section" id="previewSection" style="display: none;">
+            <h2>📄 Preview</h2>
+            <div class="preview-actions">
+                <button class="copy-btn" id="copyBtn">📋 Copy to Clipboard</button>
+                <button class="download-btn" id="downloadBtn">💾 Download README.md</button>
+            </div>
+            <div class="preview-box">
+                <pre id="previewContent"></pre>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Made with 💙 by <a href="https://github.com/Bhavesh1116" target="_blank">Bhavesh Mali</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
